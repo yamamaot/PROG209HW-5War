@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>War Game</title>
+    <script src="cardConstructor.js"></script>
+    <script src="deckConstructor.js"></script>
+       
+
+</head>
+
+<body>
+    <h2>Card game (War)</h2>
+    <p>Each player is dealt half of a 52 card deck, and one card from each pile is played at a time.</p>
+    
+    <div id="cardDisplay">Player card: <span id="playerCard"></span><br/>Computer card: <span id="computerCard"></span></div> <br/>
+    <div id="result"></div>
+    <p>
+        Player score: <span id="playerScore">0</span><br />
+        Computer score: <span id="computerScore">0</span><br />
+        Number of turns: <span id="turnCount"></span>
+    </p>
+    <br />
+    <p>
+        <span id="status"></span>
+    </p>
+    <button id="deal" type="button" onclick="dealCards()">Deal Cards</button>  <br/>
+    <button id="next" type="button" onclick="playGame()">Next Hand</button> 
+<script src="index.js"></script>
+</body>
+</html>
