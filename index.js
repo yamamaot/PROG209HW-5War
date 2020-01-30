@@ -80,20 +80,20 @@ document.addEventListener("DOMContentLoaded", function(event){
 
     returnRank = function(Card){
         let rankValue = parseInt(Card.rank);
-        if(rankValue < 11 && rankValue > 1){
-            return rankValue.toString();
+        if(rankValue < 10){
+            return (rankValue + 1).toString();
         } else {
             switch (rankValue) {
-                case 1:
+                case 13:
                     return "Ace"
                     break;
-                case 11:
+                case 10:
                     return "Jack";
                     break;
-                case 12:
+                case 11:
                     return "Queen";
                     break;
-                case 13:
+                case 12:
                     return "King";
                     break;
             }
